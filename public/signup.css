@@ -1,0 +1,100 @@
+body {
+  background-color: #001a3fd3;
+}
+
+.loginform {
+  margin: 20px 0px 20px 28vw;
+  background-color: #001a3f;
+  width: 40vw;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  padding: 20px 1.953125vw 20px 4.55729166667vw;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #001a3fd4;
+}
+.loginform2 {
+  position: relative;
+  margin-left: 2vw;
+}
+.formname {
+  margin-right: 45px;
+  font-size: 22px;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+.fnames {
+  margin-top: 30px;
+  display: flex;
+}
+
+.in2 {
+  margin-left: 1vw;
+}
+.name {
+  padding-left: 5px;
+  border-radius: 4px;
+  margin-top: 3px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 15vw;
+}
+.inputdate {
+  padding-left: 5px;
+  border-radius: 4px;
+  width: 15vw;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.inputgender {
+  padding-left: 5px;
+  border-radius: 4px;
+  width: 15.8vw;
+  height: 43px;
+  margin-bottom: 20px;
+}
+.dobgen {
+  display: flex;
+}
+.dobflex {
+  margin-left: 1vw;
+}
+
+.ename {
+  padding-left: 5px;
+  border-radius: 4px;
+  width: 31.5vw;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.formsubmit {
+  border: none;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  background-color: rgb(191, 0, 0);
+  border-radius: 4px;
+  width: 10vw;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.formsubmit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 2px 5px #1c82ad;
+  background-color: #ff0000;
+}
+.formsubmit:active {
+  transform: translateY(-1px);
+  box-shadow: 0px 1px 2.5px #ff0000;
+}
+
+.formcheckbox {
+  margin: 5px 5px 0px 3px;
+  height: 15px;
+  width: 15px;
+}
+.formtcd {
+  color: #1c82ad;
+}

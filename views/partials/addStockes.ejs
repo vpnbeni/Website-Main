@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Stockes</title>
+  </head>
+  <body>
+    <%- include('../partials/flash.ejs') %>
+    <form action="/stock/createstock" method="post">
+      Stock Name
+      <input type="text" name="stockName" />
+      Date to Set
+      <input type="date" name="date" />
+      Cycle
+      <input type="number" name="cycle" />
+
+      <button>Add</button>
+    </form>
+    <br /><br /><br /><br /><br />
+    <form action="/stock/getdate" method="post">
+      Stock Name
+
+      <select name="stockName" required>
+        <option selected value="0" disabled selected>Select</option>
+        <% const stockNames = [];%> <% for (let allStock of allStocks){ let
+        count = 0; for(let j = 0; j<=stockNames.length;j++) { if
+        (stockNames[j]== allStock.stockName ) { count++; } } if(count == 0){
+        stockNames.push(allStock.stockName); }}%>
+<% for(let i = 0;i<stockNames.length;i++){%>
+        <option value="<%= stockNames[i] %>"><%= stockNames[i] %></option>
+        <%}%>
+      </select>
+
+      <button>Get</button>
+    </form>
+  </body>
+</html>

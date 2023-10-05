@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/signup.css" />
+    <title>SignUp</title>
+</head>
+<body>
+    <form class="loginform" action="/new/signup" method="POST">
+        <div class="loginform2">
+            
+            <div class="formname">Registration Form</div>
+            <div class="fnames">
+                <div class="in1">
+                    <div class="fname">First Name</div><input type="text" class="name" name="firstName" id="firstname" required></div>
+                    <div class="in2">
+                        <div class="lastname">Last Name</div><input type="text" class="name" name="lastName" id="lastname" required></div>
+                
+            </div>
+            <div class="dobgen">
+            <div class="dobflx">
+                <div class="dob">Date of Birth</div>
+            <div><input type= "date" class="inputdate" id="dateofbirth" name="dateOfBirth" required></div>
+    </div>
+            <div class="dobflex">
+            <div class="gender">Course Selected</div>
+              <div><select name="courseSelected" id="#genderselect" class="inputgender" required>
+                    <option name="gender" selected value="0" disabled selected>Select</option>
+                    <option value="RTR" >RTR</option>
+                    <option value="CTC">CTC</option>
+                </select>
+            </div></div></div>
+            <div class="email">Email</div>
+            <input type= "email" name="email" class="ename" required>
+            <div class="pnumber">Phone Number</div>
+            <input type= "tel" class="ename" name="phoneNumber" required><br>
+            <div class="pnumber">Password</div>
+            <input type= "password" name="password" class="ename" required><br>
+            <div class="tcd">
+                <div class="tcdtext"><input type="checkbox" class="formcheckbox" required>I have read and agree to the <a href="" class="formtcd">Terms & Conditions</a> and <a href="" class="formtcd">Privacy Policy</a> of guitrading.com</div>
+            </div>
+            <button class="formsubmit">Submit</button>
+    
+        
+    </div>
+        </div>
+        </form>
+</body>
+</html>
+    
+    
+    
+    
